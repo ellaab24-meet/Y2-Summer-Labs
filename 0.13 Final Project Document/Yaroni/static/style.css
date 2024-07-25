@@ -1,0 +1,126 @@
+/* Reset some basic styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Common styling for headers */
+h1, h3, h4, h5 {
+    color: #f3e5f5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for Signup page */
+#signup_form {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#signup_form2 {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Common styling for buttons */
+.signup_button, .login_button, .submit_button {
+    width: 80%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    margin-bottom: 15px;
+    background: #fff;
+    color: #6a1b9a;
+    transition: background 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.signup_button:focus, .login_button:focus, .submit_button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.submit_button {
+    background: #fff;
+    color: #6a1b9a;
+    border-radius: 25px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.submit_button:hover {
+    background: #6a1b9a;
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#signup_bottom {
+    margin-top: 20px;
+}
+
+#signup_bottom a, #login_form2 a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#signup_bottom a:hover, #login_form2 a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for Login page */
+#login_form {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#login_form2 {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+/* Styling for error messages */
+#error {
+    color: #ff5252;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+#error a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#error a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .signup_button, .login_button, .submit_button {
+        width: 90%;
+    }
+
+    .submit_button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}

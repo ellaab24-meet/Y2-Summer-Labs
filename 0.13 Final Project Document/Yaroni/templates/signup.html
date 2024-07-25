@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Signup</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+<h1 id="signup_form">Welcome</h1>
+<h3 id="signup_form2">Before we get started, please fill the form below and sign up</h3>
+
+<form action="/signup" method="POST">
+	<input class="signup_button" type="text" name="email" placeholder="Enter your email">
+	<input class="signup_button" type="password" name="password" placeholder="Create a password">
+	<input class="submit_button" type="submit" value="Submit">
+</form>
+
+<h5 id="signup_bottom">Already have an account? click <a href='/login'>here</a></h5>
+
+{% if error %}
+	<p>{{ error }}</p>
+{% endif %}
+
+</body>
+</html>

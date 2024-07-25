@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/home.css">
+</head>
+<body>
+    <br><br><br>
+    <h1 id="memory">In loving memory of Yaroni Chitiz</h1>
+    <br><br><br>
+
+    <form action="/logout" method="POST">
+        <button class="home_button" type="submit" formaction="/candle" formmethod="get">Light a candle</button>
+        <button class="home_button" type="submit" formaction="/post" formmethod="get">Post a story</button>
+        <button class="home_button" type="submit" formaction="/storywall" formmethod="get">Go to the Storywall</button>
+        <button class="home_button" type="submit">Sign Out</button>
+    </form> <br>
+
+    <div class="content-container">
+        <div class="text-content">
+            <p id="yaroni_p">Yaron Chitiz, known to everyone as Yaroni, was the very definition of kindness, warmth, and generosity. His presence was a gift; his smile had a magical way of brightening up any room, instantly lifting everyone’s spirits and making you feel happy too. Yaroni had this amazing tradition of playing Settlers of Catan on Shabbat with friends and family. Even though he was incredibly skilled and often came out on top, he made every game fun and engaging for everyone involved. His joyful nature and genuine spirit made him one of the most remarkable people you could ever meet. Yaroni’s heroism in protecting his loved ones and others speaks volumes about his character. He faced every challenge with bravery and selflessness, leaving behind a legacy of courage and compassion. The world lost an angel when he was taken from us, and his absence is felt everyday. I miss him more than words can express—his laughter, his warmth, and the way he could make any moment better just by being there. His memory continues to be a source of comfort and inspiration, and I am endlessly grateful for the time we shared and the positive impact he had on my life.</p>
+        </div>
+
+        <div class="image-container">
+            <img id="Yaroni" src="{{ url_for('static', filename='5faa5dea-0d7c-4119-8106-4effeebb4688.jpg') }}" alt="Yaroni" class="right-aligned-img">
+            <div class="image-caption">Yaroni Chitiz 2000 - 2023</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Post</title>
+    <link rel="stylesheet" href="../static/post.css">
+</head>
+<body>
+
+    <h2 id="post_p">Share a story you have with Yaroni to help others understand what kind of person he was</h2> <br> <br> <br> <br>
+
+    <form action="/post" method="POST">
+        <textarea id="story_button" name="post" placeholder="Write your story here" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <h4 id="thank_you">Thank you for sharing your story</h4>
+        <br><br>
+
+        <input class="post_button" type="submit" name="submit_post" value="Submit Post">
+        <br><br>
+
+        <button class="post_button" type="submit" formaction="/storywall" formmethod="get">Go to the Storywall</button>
+        <br><br>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Light a Candle</title>
+    <link rel="stylesheet" href="../static/candle.css">
+</head>
+
+<body>
+    <h1 id="thank_you2">Thank You for Lighting a Candle!</h1> 
+    <div class="candle-container">
+        <img src="https://cdn.pixabay.com/animation/2023/08/13/09/48/09-48-37-537_512.gif" alt="Candle Left" class="candle-img">
+        <h2 id="candles_lit">Number of candles lit so far: {{ count }}</h2>
+        <img src="https://cdn.pixabay.com/animation/2023/08/13/09/48/09-48-37-537_512.gif" alt="Candle Right" class="candle-img">
+    </div>
+
+    <form action="/light_candle" method="POST">
+        <button id="candle_button" type="submit">Light Another Candle</button>
+    </form>
+
+    <button><a href="/home">Back to Home</a></button>
+</body>
+</html>

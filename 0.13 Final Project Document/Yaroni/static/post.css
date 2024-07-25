@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #f3e5f5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+h4 {
+    color: #f3e5f5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Textarea Styling */
+textarea {
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    background: #fff;
+    color: #6a1b9a;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Form Button Styling */
+.post_button {
+    width: 80%;
+    max-width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+    color: #6a1b9a;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.post_button:hover {
+    background: #6a1b9a;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional Button Styling */
+.post_button[type="submit"] {
+    background: #6a1b9a;
+    color: #fff;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.post_button[type="submit"]:hover {
+    background: #8e24aa;
+}
+
+/* Link Button Styling */
+.post_button[type="button"] {
+    background: #fff;
+    color: #6a1b9a;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 15px 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.post_button[type="button"]:hover {
+    background: #6a1b9a;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    textarea {
+        width: 90%;
+        font-size: 0.9em;
+    }
+
+    .post_button {
+        width: 90%;
+        font-size: 0.9em;
+        padding: 12px;
+    }
+}
